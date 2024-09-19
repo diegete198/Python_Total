@@ -1,33 +1,33 @@
 from random import *
-#
-# # Lista_inicial
-# palitos = ['-','--','---','----']
-#
-# # mezclar_palitos
-# def mezclar(lista):
-#     shuffle(lista)
-#     return  lista
-#
-# # pedir_intento
-# def probar_suerte():
-#     intento = ''
-#     while intento not in ['1','2','3','4']:
-#         intento = input("Elige un numero del 1 al 4: ")
-#
-#     return int(intento)
-#
-#
-# # comprobar_intento
-# def chequear_intento(lista, intento):
-#     if  lista[intento -1] == '-':
-#         print("A laver los platos")
-#     else:
-#         print("Esta vez te has salvado")
-#     print(f"Te ha tocado {lista[intento-1]}")
-#
-# palitos_mezclados = mezclar(palitos)
-# seleccion = probar_suerte()
-# chequear_intento(palitos_mezclados, seleccion)
+
+# Lista_inicial
+palitos = ['-','--','---','----']
+
+# mezclar_palitos
+def mezclar(lista):
+    shuffle(lista)
+    return  lista
+
+# pedir_intento
+def probar_suerte():
+    intento = ''
+    while intento not in ['1','2','3','4']:
+        intento = input("Elige un numero del 1 al 4: ")
+
+    return int(intento)
+
+
+# comprobar_intento
+def chequear_intento(lista, intento):
+    if  lista[intento -1] == '-':
+        print("A laver los platos")
+    else:
+        print("Esta vez te has salvado")
+    print(f"Te ha tocado {lista[intento-1]}")
+
+palitos_mezclados = mezclar(palitos)
+seleccion = probar_suerte()
+chequear_intento(palitos_mezclados, seleccion)
 
 
 # def lanzar_dados():
@@ -57,16 +57,16 @@ from random import *
 #     valor_medio = sum(lista) / len(lista)
 #     return valor_medio
 
-lista_numeros = [1,2,3,4]
-def lanzar_monedas():
-    moneda = ["Cara", "Cruz"]
-    return choice(moneda)
-
-def probar_suerte(moneda,lista):
-    if moneda == 'Cara':
-        return "La lista se autodestruirá", []
-    else:
-        return "La lista fue salvada", lista
-
-
-print(probar_suerte(lanzar_monedas(),lista_numeros))
+# lista_numeros = [1,2,3,4]
+# def lanzar_monedas():
+#     moneda = ["Cara", "Cruz"]
+#     return choice(moneda)
+#
+# def probar_suerte(moneda,lista):
+#     if moneda == 'Cara':
+#         return "La lista se autodestruirá", []
+#     else:
+#         return "La lista fue salvada", lista
+#
+#
+# print(probar_suerte(lanzar_monedas(),lista_numeros))
